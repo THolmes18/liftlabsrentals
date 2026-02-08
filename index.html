@@ -23,15 +23,18 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center; /* centers the text block */
-    position: relative; /* allows logo to stay left */
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
 }
 
 .logo-img {
-    width: 135px;
+    width: 60px;
     height: auto;
     position: absolute;
-    left: 0; /* pins logo to the left side */
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .header-center {
@@ -39,17 +42,39 @@
 }
 
 .logo-text {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .tagline {
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0.8;
 }
 
+/* ⭐ Mobile Fix */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 70px; /* space for logo */
+    }
+
+    .logo-img {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .tagline {
+        font-size: 13px;
+    }
+}
         nav {
             background: #222;
             padding: 10px;
