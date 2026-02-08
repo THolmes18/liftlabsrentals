@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiftLabs Rentals LLC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #333;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section h2 {
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>LiftLabs Rentals LLC</h1>
+    <p>Reliable Rentals & Workspace Solutions</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Reliable. Professional. Built for the Road.</h1>
+    <p>Serving San Antonio and surrounding areas.</p>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        LiftLabs Rentals LLC provides dependable vehicle rentals, car flipping support, 
+        and flexible garage/space rentals for individuals and small businesses. 
+        We focus on reliability, transparency, and customer-first service.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>Car Rentals</h3>
+            <p>Affordable, clean, and reliable vehicles for personal or business use. 
+               Daily, weekly, and monthly options available.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Car Flipping Support</h3>
+            <p>Short-term vehicle access, temporary storage, and flexible rental terms 
+               for automotive entrepreneurs.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Garage & Space Rentals</h3>
+            <p>Secure, flexible workspace for mechanics, detailers, car flippers, 
+               and DIY projects.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> [Your Business Phone]</p>
+    <p><strong>Email:</strong> info@liftlabsrentals.com</p>
+    <p><strong>Location:</strong> San Antonio, Texas</p>
+</section>
+
+<footer>
+    © 2026 LiftLabs Rentals LLC — All Rights Reserved
+</footer>
+
+</body>
+</html>
