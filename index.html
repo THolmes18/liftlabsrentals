@@ -13,11 +13,30 @@
         }
 
         header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 16px;
+    opacity: 0.8;
+}
 
         nav {
             background: #222;
@@ -77,14 +96,33 @@
             padding: 20px;
             margin-top: 40px;
         }
+
+        .turo-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #593cfb; /* Turo purple */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.turo-btn:hover {
+    background: #452cc7;
+}
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>LiftLabs Rentals LLC</h1>
-    <p>Reliable Rentals & Workspace Solutions</p>
+    <div class="header-container">
+        <div class="logo">LiftLabs Rentals</div>
+        <p class="tagline">Reliable Rentals & Workspace Solutions</p>
+    </div>
 </header>
 
 <nav>
@@ -96,6 +134,10 @@
 <section class="hero">
     <h1>Rent. Explore. Repeat.</h1>
     <p>Serving San Antonio and surrounding areas.</p>
+
+    <a href="https://turo.com/us/en/host/7751767" class="turo-btn" target="_blank">
+        Book on Turo
+    </a>
 </section>
 
 <section id="about" class="section">
