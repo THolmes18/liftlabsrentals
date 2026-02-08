@@ -12,10 +12,10 @@
             color: #222;
         }
 
-        header {
+       header {
     background: #111;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .header-container {
@@ -23,10 +23,22 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center; /* centers the text block */
+    position: relative; /* allows logo to stay left */
 }
 
-.logo {
+.logo-img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    left: 0; /* pins logo to the left side */
+}
+
+.header-center {
+    text-align: center;
+}
+
+.logo-text {
     font-size: 32px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -120,8 +132,12 @@
 
 <header>
     <div class="header-container">
-        <div class="logo">LiftLabs Rentals</div>
-        <p class="tagline">Reliable Rentals & Workspace Solutions</p>
+        <img src="logo.png" alt="LiftLabs Rentals Logo" class="logo-img">
+
+        <div class="header-center">
+            <div class="logo-text">LiftLabs Rentals</div>
+            <p class="tagline">Reliable Rentals & Workspace Solutions</p>
+        </div>
     </div>
 </header>
 
